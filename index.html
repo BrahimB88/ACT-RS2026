@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACT-RS 2026 - Advances in Control Technologies for Robotic Systems</title>
+    <meta name="description"
+        content="The First Spring School on Advances in Control Technologies for Robotic Systems (ACT-RS 2026) at KFUPM.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@500;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">ACT-RS 2026</a>
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#speaker">Speaker</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#abstracts">Abstracts</a></li>
+                <li><a href="#venue">Venue</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <div class="hero-logos">
+                <span class="logo-text">KFUPM</span>
+                <span class="divider">|</span>
+                <span class="logo-text">LIRMM</span>
+                <span class="divider">|</span>
+                <span class="logo-text">CNRS</span>
+            </div>
+            <h2 class="hero-subtitle">The First Spring SCHOOL on</h2>
+            <h1 class="hero-title">Advances in Control Technologies <br>for Robotic Systems</h1>
+            <p class="hero-dates"><i class="far fa-calendar-alt"></i> March 29 - April 01, 2026</p>
+            <p class="hero-location"><i class="fas fa-map-marker-alt"></i> KFUPM, Dhahran, Saudi Arabia</p>
+            <div class="hero-cta">
+                <a href="#schedule" class="btn btn-primary">View Schedule</a>
+                <a href="#about" class="btn btn-secondary">Learn More</a>
+            </div>
+        </div>
+    </header>
+
+
+
+    <section id="about" class="section section-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>About The Event</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-content">
+                    <p>Welcome to the <strong>First Spring School on Advances in Control Technologies for Robotic
+                            Systems (ACT-RS 2026)</strong>. This prestigious event is organized to bring together
+                        researchers, students, and industry professionals to explore the latest advancements in robotic
+                        control.</p>
+                    <div class="organizers-box">
+                        <h3>Organizers</h3>
+                        <ul>
+                            <li><strong>Dr. Brahim Brahmi</strong> (Saudi Arabia)</li>
+                            <li><strong>Dr. Ahmed Chemori</strong> (France)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="about-highlights">
+                    <div class="highlight-card">
+                        <i class="fas fa-robot"></i>
+                        <h4>Robotics</h4>
+                        <p>Detailed insights into modern robotic systems.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <i class="fas fa-microchip"></i>
+                        <h4>Control</h4>
+                        <p>Advanced control technologies and theories.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <i class="fas fa-user-graduate"></i>
+                        <h4>Education</h4>
+                        <p>Designed for PhD and MSc students and researchers.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="speaker" class="section section-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Keynote Speaker</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="speaker-profile">
+                <div class="speaker-image-container">
+                    <img src="assets/speaker-placeholder.png" alt="Dr. Ahmed Chemori" class="speaker-img">
+                </div>
+                <div class="speaker-info">
+                    <h3>Dr. Ahmed Chemori</h3>
+                    <p class="speaker-title">Senior Researcher, LIRMM, CNRS / University of Montpellier</p>
+                    <p class="speaker-bio">
+                        Ahmed Chemori received the M.Sc. and Ph.D. degrees in automatic control from the Polytechnic
+                        Institute of Grenoble, France, in 2001 and 2005, respectively. He is currently a Senior
+                        Researcher at the CNRS in automatic control and robotics, affiliated with LIRMM laboratory. His
+                        research interests include nonlinear control (robust, adaptive, and predictive approaches) and
+                        their real-time applications in various areas of robotics, including parallel robotics,
+                        underwater robotics, wearable robotics, and underactuated systems. He is the author or co-author
+                        of more than 190 scientific publications.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="schedule" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Program Schedule</h2>
+                <div class="underline"></div>
+            </div>
+
+            <div class="schedule-tabs">
+                <button class="tab-btn active" data-day="day1">Mar 29</button>
+                <button class="tab-btn" data-day="day2">Mar 30</button>
+                <button class="tab-btn" data-day="day3">Mar 31</button>
+                <button class="tab-btn" data-day="day4">Apr 01</button>
+            </div>
+
+            <div class="schedule-content">
+                <!-- Day 1 -->
+                <div class="day-schedule active" id="day1">
+                    <div class="timeline-item">
+                        <div class="time">8:30 - 9:00</div>
+                        <div class="content">
+                            <h4>Opening Ceremony</h4>
+                            <p>Head of Electrical Engineering department, Brahim Brahmi, and Others.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item lecture">
+                        <div class="time">9:00 - 10:30</div>
+                        <div class="content">
+                            <span class="tag">Lecture 1</span>
+                            <h4>A comprehensive overview of Robotics today</h4>
+                        </div>
+                    </div>
+                    <div class="timeline-item break">
+                        <div class="time">10:30 - 11:00</div>
+                        <div class="content">
+                            <h4><i class="fas fa-coffee"></i> Coffee Break & Posters Session</h4>
+                        </div>
+                    </div>
+                    <div class="timeline-item lecture">
+                        <div class="time">11:00 - 12:30</div>
+                        <div class="content">
+                            <span class="tag">Lecture 2</span>
+                            <h4>Motion control & applications of underactuated robotic systems</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Day 2 -->
+                <div class="day-schedule" id="day2">
+                    <div class="timeline-item lecture">
+                        <div class="time">9:00 - 10:30</div>
+                        <div class="content">
+                            <span class="tag">Lecture 3</span>
+                            <h4>Motion control & applications of parallel kinematic manipulators</h4>
+                        </div>
+                    </div>
+                    <div class="timeline-item break">
+                        <div class="time">10:30 - 11:00</div>
+                        <div class="content">
+                            <h4><i class="fas fa-coffee"></i> Coffee Break & Posters Session</h4>
+                        </div>
+                    </div>
+                    <div class="timeline-item lecture">
+                        <div class="time">11:00 - 12:30</div>
+                        <div class="content">
+                            <span class="tag">Lecture 4</span>
+                            <h4>Motion control & applications of autonomous underwater robots</h4>
+                        </div>
+                    </div>
+                    <div class="timeline-item break">
+                        <div class="time">12:30 - 14:00</div>
+                        <div class="content">
+                            <h4><i class="fas fa-utensils"></i> Lunch Break</h4>
+                        </div>
+                    </div>
+                    <div class="timeline-item event">
+                        <div class="time">14:00 - 17:00</div>
+                        <div class="content">
+                            <span class="tag event-tag">Competition</span>
+                            <h4>“My thesis in 180s” Competition</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Day 3 -->
+                <div class="day-schedule" id="day3">
+                    <div class="timeline-item lecture">
+                        <div class="time">9:00 - 10:30</div>
+                        <div class="content">
+                            <span class="tag">Lecture 5</span>
+                            <h4>On walking gait control: From human to humanoid robots</h4>
+                        </div>
+                    </div>
+                    <div class="timeline-item break">
+                        <div class="time">10:30 - 11:00</div>
+                        <div class="content">
+                            <h4><i class="fas fa-coffee"></i> Coffee Break & Posters Session</h4>
+                        </div>
+                    </div>
+                    <div class="timeline-item lecture">
+                        <div class="time">11:00 - 12:30</div>
+                        <div class="content">
+                            <span class="tag">Lecture 6</span>
+                            <h4>Motion control of wearable robotic exoskeletons for rehabilitation</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Day 4 -->
+                <div class="day-schedule" id="day4">
+                    <div class="timeline-item lecture">
+                        <div class="time">9:00 - 12:00</div>
+                        <div class="content">
+                            <span class="tag">Lecture 7</span>
+                            <h4>Laboratory Course</h4>
+                            <p>Simulation with Matlab/Simulink</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="time">12:00 - 13:00</div>
+                        <div class="content">
+                            <h4>Closing Ceremony</h4>
+                            <p>Participation certificates, Awards ("Best poster", "My Thesis in 180s"), Closing Speech.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="abstracts" class="section section-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Lecture Abstracts</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="abstracts-list">
+                <details class="abstract-item">
+                    <summary>
+                        <span class="lecture-id">Lecture 1</span>
+                        <span class="lecture-title">A comprehensive overview of Robotics today</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </summary>
+                    <div class="abstract-content">
+                        <p>Robotics is an interdisciplinary branch of engineering that includes mechanical engineering,
+                            electrical engineering, computer engineering, control engineering and others. It deals with
+                            design, construction and use of robots, as well as computer systems for their control,
+                            sensory feedback, and information processing. This talk will give an overview of most of
+                            these robotic fields through various videos illustrating needs, challenges and applications.
+                        </p>
+                    </div>
+                </details>
+
+                <details class="abstract-item">
+                    <summary>
+                        <span class="lecture-id">Lecture 2</span>
+                        <span class="lecture-title">Motion control & applications of underactuated robotic
+                            systems</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </summary>
+                    <div class="abstract-content">
+                        <p>Underactuated mechanical systems are those systems with less control inputs than generalized
+                            coordinates. This talk deals with control of underactuated mechanical systems, where two
+                            main problems have been studied; stabilization around unstable equilibrium point and stable
+                            limit cycle generation.</p>
+                    </div>
+                </details>
+
+                <details class="abstract-item">
+                    <summary>
+                        <span class="lecture-id">Lecture 3</span>
+                        <span class="lecture-title">Motion control & applications of parallel kinematic
+                            manipulators</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </summary>
+                    <div class="abstract-content">
+                        <p>This talk will give an overview of some proposed advanced control solutions for high-speed
+                            applications of PKMs in food packaging tasks. The proposed solutions are mainly based on
+                            nonlinear adaptive control techniques and have been validated through real-time experiments
+                            on different prototypes.</p>
+                    </div>
+                </details>
+
+                <details class="abstract-item">
+                    <summary>
+                        <span class="lecture-id">Lecture 4</span>
+                        <span class="lecture-title">Motion control & applications of autonomous underwater robots</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </summary>
+                    <div class="abstract-content">
+                        <p>This talk will be focused on control challenges of small tethered underwater vehicles and
+                            some proposed control solutions. Different control solutions, mainly issued from adaptive
+                            control, will be then presented and discussed.</p>
+                    </div>
+                </details>
+
+                <details class="abstract-item">
+                    <summary>
+                        <span class="lecture-id">Lecture 5</span>
+                        <span class="lecture-title">On walking gait control: From human to humanoid robots</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </summary>
+                    <div class="abstract-content">
+                        <p>This presentation will be focused on the challenge dealing with control design for dynamic
+                            walking. It explores humanoid robotics basic principles and walking gait control, resolved
+                            through a human-data-based control architecture.</p>
+                    </div>
+                </details>
+
+                <details class="abstract-item">
+                    <summary>
+                        <span class="lecture-id">Lecture 6</span>
+                        <span class="lecture-title">Motion control of wearable robotic exoskeletons for
+                            rehabilitation</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </summary>
+                    <div class="abstract-content">
+                        <p>This talk will be focused on wearables robotics challenges, recent advances in this field,
+                            and some proposed control solutions for exoskeletons. The proposed control solutions will be
+                            illustrated through numerical simulations as well as real-time experiments.</p>
+                    </div>
+                </details>
+
+                <details class="abstract-item">
+                    <summary>
+                        <span class="lecture-id">Lecture 7</span>
+                        <span class="lecture-title">Laboratory Course (Simulations with Matlab/Simulink)</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </summary>
+                    <div class="abstract-content">
+                        <p>Application of some control schemes, learned in previous lectures, to robotic systems.
+                            Subjects include: Control of a serial robotic manipulator, Control of an autonomous surface
+                            vehicle (USV), Control of knee-joint exoskeleton, Control of an underactuated mechanical
+                            system, etc.</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <section id="venue" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Venue</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="venue-content">
+                <div class="venue-info">
+                    <h3>King Fahd University of Petroleum & Minerals</h3>
+                    <p class="venue-detail"><i class="fas fa-university"></i> Electrical Engineering Department</p>
+                    <p class="venue-detail"><i class="fas fa-map-marker-alt"></i> Dhahran 31261, Eastern Province, Saudi
+                        Arabia</p>
+                    <p class="venue-note"><i class="fas fa-building"></i> Office: Building 59</p>
+                </div>
+                <!-- Map Link -->
+                <a href="https://maps.app.goo.gl/QeGmHpnopy7zGtoe6" target="_blank" class="venue-map-link">
+                    <img src="assets/map-preview.png" alt="View Location on Google Maps" class="map-preview">
+                    <div class="map-overlay">
+                        <span class="btn btn-primary"><i class="fas fa-map-marked-alt"></i> View on Google Maps</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="sponsors" class="section section-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Event Sponsors & Organizers</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="sponsors-grid">
+                <div class="sponsor-item">
+                    <img src="assets/kfupm-logo.png" alt="KFUPM Logo">
+                </div>
+                <div class="sponsor-item">
+                    <img src="assets/rcimr-logo.png" alt="RC-IM&R Logo">
+                </div>
+                <div class="sponsor-item">
+                    <img src="assets/lirmm-cnrs-logo.png" alt="LIRMM CNRS University of Montpellier Logo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <h3>ACT-RS 2026</h3>
+            </div>
+            <div class="social-share">
+                <p>Share this event:</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fkfupm.edu.sa"
+                        target="_blank" class="social-btn linkedin" title="Share on LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://twitter.com/intent/tweet?text=Join%20the%20First%20Spring%20School%20on%20Advances%20in%20Control%20Technologies%20for%20Robotic%20Systems%20(ACT-RS%202026)%20at%20KFUPM&url=https%3A%2F%2Fkfupm.edu.sa"
+                        target="_blank" class="social-btn x-twitter" title="Share on X">
+                        <i class="fab fa-x-twitter"></i>
+                    </a>
+                </div>
+            </div>
+            <p>&copy; 2026 Spring School on Advances in Control Technologies for Robotic Systems. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
