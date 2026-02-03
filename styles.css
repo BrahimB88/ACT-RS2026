@@ -385,6 +385,7 @@ ul {
     color: var(--text-light);
     line-height: 1.7;
     margin-bottom: 20px;
+    text-align: justify;
 }
 
 /* Schedule Section */
@@ -557,6 +558,7 @@ ul {
     background-color: var(--white);
     color: var(--text-light);
     line-height: 1.6;
+    text-align: justify;
 }
 
 .abstract-img {
