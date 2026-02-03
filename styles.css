@@ -820,8 +820,36 @@ ul {
 
 /* Responsive */
 @media (max-width: 768px) {
+    .section {
+        padding: 60px 0;
+    }
+
+    .section-header {
+        margin-bottom: 40px;
+    }
+
+    .section-header h2 {
+        font-size: 2rem;
+    }
+
+    .hero {
+        height: auto;
+        padding: 120px 0 60px 0;
+    }
+
     .hero-title {
         font-size: 2.2rem;
+    }
+
+    .hero-brand-logo {
+        max-width: 180px;
+    }
+
+    .hero-department,
+    .hero-location,
+    .hero-dates {
+        font-size: 1rem;
+        padding: 0 20px;
     }
 
     .menu-toggle {
@@ -830,7 +858,6 @@ ul {
 
     .nav-links {
         display: none;
-        /* Add JS to toggle */
         position: absolute;
         top: 100%;
         left: 0;
@@ -840,6 +867,11 @@ ul {
         padding: 20px;
         box-shadow: var(--shadow-md);
         text-align: center;
+        z-index: 1000;
+    }
+
+    .nav-links li {
+        margin: 15px 0;
     }
 
     .nav-links.active {
@@ -851,32 +883,37 @@ ul {
     .venue-content {
         grid-template-columns: 1fr;
         flex-direction: column;
+        gap: 30px;
     }
 
     .speaker-image-container {
         flex: 0 0 auto;
         width: 100%;
-        display: flex;
-        justify-content: center;
+        max-width: 250px;
+        margin: 0 auto;
     }
 
     .timeline-item {
         flex-direction: column;
         gap: 5px;
+        padding-bottom: 30px;
     }
 
     .timeline-item .time {
-        font-size: 0.9rem;
-        color: var(--accent-color);
+        flex: 0 0 auto;
+        font-size: 0.95rem;
+        color: var(--primary-color);
     }
 
     .abstract-item summary {
         flex-direction: column;
         align-items: flex-start;
         gap: 10px;
+        padding: 15px;
     }
 
     .lecture-id {
+        width: auto;
         margin-bottom: 5px;
     }
 
@@ -889,5 +926,38 @@ ul {
         display: block;
         margin: 0 auto 20px auto;
         max-width: 100%;
+    }
+
+    .organizers-grid {
+        grid-template-columns: 1fr;
+        padding: 0 10px;
+    }
+
+    .venue-map {
+        min-height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 1.8rem;
+    }
+
+    .hero-brand-logo {
+        max-width: 150px;
+    }
+
+    .logo img {
+        height: 45px;
+    }
+
+    .btn {
+        width: 100%;
+        margin-bottom: 10px;
+        margin-right: 0 !important;
+    }
+
+    .hero-cta {
+        padding: 0 20px;
     }
 }
