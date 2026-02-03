@@ -111,10 +111,14 @@ ul {
 }
 
 .logo {
-    font-size: 1.5rem;
-    font-weight: 800;
-    color: var(--primary-color);
-    font-family: 'Outfit', sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 60px;
+    width: auto;
+    object-fit: contain;
 }
 
 .nav-links {
