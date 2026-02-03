@@ -394,6 +394,17 @@ ul {
     text-align: justify;
 }
 
+.speaker-bio a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.speaker-bio a:hover {
+    color: var(--secondary-color);
+}
+
 /* Schedule Section */
 .schedule-tabs {
     display: flex;
