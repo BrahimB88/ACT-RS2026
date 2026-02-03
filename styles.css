@@ -204,6 +204,7 @@ ul {
 }
 
 .hero-dates,
+.hero-department,
 .hero-location {
     font-size: 1.2rem;
     margin-bottom: 10px;
@@ -513,8 +514,7 @@ ul {
 }
 
 .hero-subtitle {
-    background-color: #fce7f3;
-    color: #9d174d;
+    margin-bottom: 10px;
 }
 
 .event-tag {
