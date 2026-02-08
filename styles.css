@@ -219,12 +219,17 @@ ul {
     margin-bottom: 15px;
 }
 
-.hero-registration {
+.hero-event-info {
+    margin-top: 15px;
+}
+
+.hero-event-info p {
     font-size: 1.1rem;
     font-weight: 600;
     color: var(--white);
-    opacity: 0.9;
-    letter-spacing: 0.5px;
+    opacity: 0.95;
+    letter-spacing: 0.3px;
+    margin-bottom: 5px;
 }
 
 /* Sections */
