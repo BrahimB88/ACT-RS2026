@@ -34,13 +34,7 @@
     <link rel="icon" type="image/png" href="assets/act-rs-logo.png">
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function () {
-            // https://dashboard.emailjs.com/admin/account
-            emailjs.init('YOUR_PUBLIC_KEY');
-        })();
-    </script>
+
 </head>
 
 <body>
@@ -60,7 +54,7 @@
                 <li><a href="#abstracts">Abstracts</a></li>
                 <li><a href="#organizers">Local Organizers</a></li>
                 <li><a href="#venue">Venue</a></li>
-                <li><a href="#registration" class="btn btn-primary"
+                <li><a href="https://forms.office.com/r/3sZ7c1ArAr" target="_blank" class="btn btn-primary"
                         style="padding: 8px 20px; color: #fff; margin-left: 10px;">Register</a></li>
             </ul>
         </div>
@@ -84,11 +78,11 @@
             <p class="hero-location"><i class="fas fa-map-marker-alt"></i> KFUPM, Dhahran, Saudi Arabia</p>
             <p class="hero-dates"><i class="far fa-calendar-alt"></i> March 29 - April 01, 2026</p>
             <div class="hero-cta">
-                <a href="#registration" class="btn btn-primary">Register Now</a>
+                <a href="https://forms.office.com/r/3sZ7c1ArAr" target="_blank" class="btn btn-primary">Register Now</a>
                 <a href="#schedule" class="btn btn-secondary">View Schedule</a>
             </div>
             <div class="hero-event-info">
-                <p>✨ FREE participation – No registration required</p>
+                <p>✨ FREE participation </p>
                 <p>🎓 Certificates will be awarded to all attendees</p>
             </div>
         </div>
@@ -625,189 +619,9 @@
                 </div>
             </div>
         </div>
-        </div>
     </section>
 
-    <section id="registration" class="section section-light">
-        <div class="container">
-            <div class="section-header">
-                <h2>Registration Form</h2>
-                <div class="underline"></div>
-                <p>Register for ACT-RS 2026. Please fill out the form carefully.</p>
-            </div>
 
-            <form id="registration-form" class="registration-form">
-                <!-- Section 1: Basic Information -->
-                <div class="form-section">
-                    <h3><i class="fas fa-user-circle"></i> Section 1 — Basic Information</h3>
-                    <div class="form-grid">
-                        <div class="form-group full-width">
-                            <label for="fullName">Full Name <span class="required">*</span></label>
-                            <input type="text" id="fullName" name="fullName" required
-                                placeholder="Dr./Mr./Ms. First Last Name">
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email Address <span class="required">*</span></label>
-                            <input type="email" id="email" name="email" required placeholder="you@example.com">
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Phone Number (with country code)</label>
-                            <input type="tel" id="phone" name="phone" placeholder="+1 234 567 8900">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Section 2: Academic/Professional Information -->
-                <div class="form-section">
-                    <h3><i class="fas fa-graduation-cap"></i> Section 2 — Academic / Professional Information</h3>
-                    <div class="form-grid">
-                        <div class="form-group">
-                            <label for="status">Current Status <span class="required">*</span></label>
-                            <select id="status" name="status" required onchange="checkOtherStatus(this)">
-                                <option value="" disabled selected>Select your status</option>
-                                <option value="Undergraduate Student">Undergraduate Student</option>
-                                <option value="Master Student">Master Student</option>
-                                <option value="PhD Student">PhD Student</option>
-                                <option value="Postdoctoral Researcher">Postdoctoral Researcher</option>
-                                <option value="Faculty Member">Faculty Member</option>
-                                <option value="Industry Professional">Industry Professional</option>
-                                <option value="Other">Other</option>
-                            </select>
-                            <input type="text" id="statusOther" name="statusOther" placeholder="Please specify if Other"
-                                style="display:none; margin-top: 10px;">
-                        </div>
-                        <div class="form-group">
-                            <label for="institution">Institution / University / Company <span
-                                    class="required">*</span></label>
-                            <input type="text" id="institution" name="institution" required placeholder="e.g., KFUPM">
-                        </div>
-                        <div class="form-group">
-                            <label for="department">Department / Program</label>
-                            <input type="text" id="department" name="department"
-                                placeholder="e.g., Electrical Engineering">
-                        </div>
-                        <div class="form-group">
-                            <label for="country">Country <span class="required">*</span></label>
-                            <input type="text" id="country" name="country" required placeholder="e.g., Saudi Arabia">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Section 3: Background in Robotics & Control -->
-                <div class="form-section">
-                    <h3><i class="fas fa-robot"></i> Section 3 — Background in Robotics & Control</h3>
-                    <div class="form-grid">
-                        <div class="form-group">
-                            <label>Main Area of Interest</label>
-                            <select id="interest" name="interest">
-                                <option value="" disabled selected>Select area</option>
-                                <option value="Robotics">Robotics</option>
-                                <option value="Control Systems">Control Systems</option>
-                                <option value="Mechatronics">Mechatronics</option>
-                                <option value="AI / Machine Learning">AI / Machine Learning</option>
-                                <option value="Biomedical Robotics">Biomedical Robotics</option>
-                                <option value="Other">Other</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label>Experience Level</label>
-                            <select id="experience" name="experience">
-                                <option value="Beginner">Beginner</option>
-                                <option value="Intermediate">Intermediate</option>
-                                <option value="Advanced">Advanced</option>
-                            </select>
-                        </div>
-                        <div class="form-group full-width">
-                            <label>Programming Experience (Check all that apply)</label>
-                            <div class="checkbox-group">
-                                <label><input type="checkbox" name="programming" value="MATLAB / Simulink"> MATLAB /
-                                    Simulink</label>
-                                <label><input type="checkbox" name="programming" value="Python"> Python</label>
-                                <label><input type="checkbox" name="programming" value="ROS"> ROS</label>
-                                <label><input type="checkbox" name="programming" value="C/C++"> C/C++</label>
-                                <label><input type="checkbox" name="programming" value="None"> None</label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Section 4: Participation Type -->
-                <div class="form-section">
-                    <h3><i class="far fa-calendar-check"></i> Section 4 — Participation Type</h3>
-                    <div class="form-group full-width">
-                        <label>Which days will you attend? <span class="required">*</span></label>
-                        <div class="checkbox-group">
-                            <label><input type="checkbox" name="days" value="Day 1"> Day 1 (Mar 29)</label>
-                            <label><input type="checkbox" name="days" value="Day 2"> Day 2 (Mar 30)</label>
-                            <label><input type="checkbox" name="days" value="Day 3"> Day 3 (Mar 31)</label>
-                            <label><input type="checkbox" name="days" value="Day 4"> Day 4 (Apr 01)</label>
-                            <label><input type="checkbox" name="days" value="All days"> All days</label>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Section 5: Competition Participation -->
-                <div class="form-section highlight-section">
-                    <h3><i class="fas fa-trophy"></i> Section 5 — Competition Participation (Important)</h3>
-                    <div class="form-group full-width">
-                        <label>Do you want to participate in “My Thesis in 180 Seconds”?</label>
-                        <div class="radio-group">
-                            <label><input type="radio" name="competition" value="Yes" onclick="toggleThesis(true)">
-                                Yes</label>
-                            <label><input type="radio" name="competition" value="No" onclick="toggleThesis(false)"
-                                    checked> No</label>
-                            <label><input type="radio" name="competition" value="Maybe" onclick="toggleThesis(true)">
-                                Maybe</label>
-                        </div>
-                    </div>
-
-                    <div id="thesis-details"
-                        style="display: none; margin-top: 20px; padding-top: 20px; border-top: 1px dashed #ccc;">
-                        <div class="form-group full-width">
-                            <label for="thesisTitle">Thesis Title</label>
-                            <input type="text" id="thesisTitle" name="thesisTitle">
-                        </div>
-                        <div class="form-group full-width">
-                            <label for="thesisAbstract">Short Abstract (150 words)</label>
-                            <textarea id="thesisAbstract" name="thesisAbstract" rows="4"></textarea>
-                        </div>
-                        <div class="form-group full-width">
-                            <label for="thesisPresentation">Upload Presentation (Optional)</label>
-                            <input type="file" id="thesisPresentation" name="thesisPresentation"
-                                accept=".pdf,.ppt,.pptx">
-                            <small>Max file size: 5MB. Prefer direct link if large.</small>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Section 6: Laboratory Session -->
-                <div class="form-section">
-                    <h3><i class="fas fa-laptop-code"></i> Section 6 — Laboratory Session (MATLAB)</h3>
-                    <div class="form-group full-width">
-                        <label>Do you plan to attend the MATLAB/Simulink lab session?</label>
-                        <div class="radio-group">
-                            <label><input type="radio" name="labSession" value="Yes"> Yes</label>
-                            <label><input type="radio" name="labSession" value="No" checked> No</label>
-                            <label><input type="radio" name="labSession" value="Not sure"> Not sure</label>
-                        </div>
-                    </div>
-                    <div class="form-group full-width" style="margin-top: 15px;">
-                        <label>Do you have MATLAB installed on your laptop?</label>
-                        <div class="radio-group">
-                            <label><input type="radio" name="matlabInstalled" value="Yes"> Yes</label>
-                            <label><input type="radio" name="matlabInstalled" value="No"> No</label>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="form-actions">
-                    <button type="submit" class="btn btn-primary btn-lg" id="submit-btn" style="width: 100%;">Submit
-                        Registration</button>
-                    <p id="form-message" style="margin-top: 15px; font-weight: 600; display: none;"></p>
-                </div>
-            </form>
-        </div>
-    </section>
 
     <section id="venue" class="section">
         <div class="container">
